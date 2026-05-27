@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# Streamlit secrets — never commit
+.streamlit/secrets.toml
+
+# Raw NHS data — stays local, not for the public repo
+data/raw/
+data/interim/
+data/sitrep/
+data/ae/
+
+# NOTE: data/processed/*.parquet IS committed — that's the cloud-runtime layer
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# pytest / coverage
+.pytest_cache/
+.coverage
+htmlcov/
